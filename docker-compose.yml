@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  dev-rest:
+    image: "rust:1.70"
+    user: "${UID}:${GID}"
+    volumes:
+      - .:/app
